@@ -6,7 +6,7 @@ set -e
 triple=x86_64-unknown-linux-gnu
 
 # install curl (needed to install rust)
-apt-get update && apt-get install -y curl gdb g++-multilib lib32stdc++6 libssl-dev libncurses5-dev
+apt-get update && apt-get install -y --force-yes curl gdb g++-multilib lib32stdc++6 libssl-dev libncurses5-dev
 
 # install rust
 curl -sL https://static.rust-lang.org/dist/rust-nightly-$triple.tar.gz | tar xvz -C /tmp
