@@ -2,6 +2,7 @@
 
 # exit if a command fails
 set -e
+set -x
 
 triple=x86_64-unknown-linux-gnu
 

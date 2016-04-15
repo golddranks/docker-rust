@@ -5,7 +5,9 @@ MAINTAINER Johannes Schickling "schickling.j@gmail.com"
 ENV USER root
 
 ADD install.sh install.sh
-RUN chmod +x install.sh && ./install.sh && rm install.sh
+RUN chmod +x install.sh 
+RUN ./install.sh
+RUN rm install.sh
 
 VOLUME ["/source"]
 WORKDIR /source
