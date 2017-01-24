@@ -1,4 +1,4 @@
-FROM debian:wheezy
+FROM debian:stretch
 MAINTAINER Johannes Schickling "schickling.j@gmail.com"
 
 # needed by cargo
